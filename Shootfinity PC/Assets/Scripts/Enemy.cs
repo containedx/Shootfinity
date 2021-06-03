@@ -10,8 +10,24 @@ public class Enemy : MonoBehaviour
     public GameObject body;
 
     public AudioSource audio;
+    
+    public ScoreController scoreController;
+    public GameObject player;
 
-        public void TakeDamage(float damageAmount)
+    void Update()
+    {
+        MoveTowardsPlayer();
+    }
+    
+    // ----------------------------------------------------------------------------------------------------------------------------------------
+
+    private void MoveTowardsPlayer()
+    {
+        transform.LookAt(player.transform);
+        transform.position += transform.forward * 1f * Time.deltaTime;
+    }
+
+    public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
         if(health <= 0f)
@@ -20,8 +36,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Die()
+    private void Die()
     {
+        scoreController.UpdateScore();
         audio.Play();
         particle.Play();
         Destroy(body);

@@ -7,9 +7,11 @@ using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public EnemyMovement enemyPrefab;
+    public Enemy enemyPrefab;
     public Transform parent;
     public GameObject player;
+    
+    public ScoreController scoreController;
 
     public float spawningSpeed;
 
@@ -29,6 +31,7 @@ public class EnemySpawner : MonoBehaviour
             );
             var enemy = Instantiate(enemyPrefab, position, Quaternion.identity, parent);
             enemy.player = player;
+            enemy.scoreController = scoreController;
             Debug.Log("enemy spawned " + enemy.transform.position);
             yield return new WaitForSeconds(time);
         }
