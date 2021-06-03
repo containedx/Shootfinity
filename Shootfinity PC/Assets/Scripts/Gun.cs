@@ -7,13 +7,14 @@ public class Gun : MonoBehaviour
     public float impactForce = 30f;
     
     public ParticleSystem particle;
+    public AudioSource audio;
 
     public Camera cam;
 
     // Update is called once per frame
     void Update()
     {
-        if( Input.GetButton("Fire1")) // Fire1 default for left mouse button
+        if( Input.GetButtonDown("Fire1")) // Fire1 default for left mouse button
         {
             Shot();
         }
@@ -24,6 +25,7 @@ public class Gun : MonoBehaviour
     void Shot()
     {
         particle.Play();
+        audio.Play();
         
         RaycastHit hitInfo; // collects informations about shoot
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hitInfo, range)) //returns true if we hit

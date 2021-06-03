@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
     public ParticleSystem particle;
     public GameObject body;
 
+    public AudioSource audio;
+
         public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
@@ -20,6 +22,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        audio.Play();
         particle.Play();
         Destroy(body);
         Destroy(gameObject, 1.5f);

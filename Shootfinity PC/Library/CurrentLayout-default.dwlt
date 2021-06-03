@@ -146,10 +146,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 147
+  controlID: 148
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,8 +169,8 @@ MonoBehaviour:
     y: 0
     width: 415
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 107
+  controlID: 81
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 81
+  controlID: 82
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -493,16 +493,16 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
-    - {fileID: -1533545926069982331, guid: 86f144bdbc7bad843a569951f29f77ba, type: 2}
+    - {fileID: 1107715076348577816, guid: cad4cd74f41924a4bbcbe916d2f9cb9b, type: 2}
     m_ValueSerializationHelper:
-    - e00: 1
+    - e00: 0.7415143
       e01: 0
       e02: 0
-      e03: 0
+      e03: 149.07077
       e10: 0
-      e11: 1
+      e11: 0.7415143
       e12: 0
-      e13: 0
+      e13: 120.80431
       e20: 0
       e21: 0
       e22: 1
@@ -512,10 +512,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 86f144bdbc7bad843a569951f29f77ba,
+  m_AnimatorController: {fileID: 9100000, guid: cad4cd74f41924a4bbcbe916d2f9cb9b,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -1533545926069982331, guid: 86f144bdbc7bad843a569951f29f77ba,
+  - m_Target: {fileID: 1107715076348577816, guid: cad4cd74f41924a4bbcbe916d2f9cb9b,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -568,11 +568,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 75
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\MY PROGRAMMING PROJECTS\UNITY\2021\Shooting Game in Cardboard
     [4experience test]\Shooting-in-Cardboard\Shootfinity PC
@@ -580,9 +580,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 54340000
-    m_LastClickedID: 13396
-    m_ExpandedIDs: 0000000054340000a03b0000a43b00002046000000ca9a3b
+    m_SelectedIDs: 1c360000
+    m_LastClickedID: 13852
+    m_ExpandedIDs: 00000000063600001a36000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -610,7 +610,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000054340000
+    m_ExpandedIDs: 0000000006360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -638,7 +638,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000a86000008a5900005c4c0000b2f5000088e30100961c030032b80000c079000094800000828000007c84000058e30300eea2000028690200b8bf00004cf80000f6c7000000000000
+    m_ExpandedInstanceIDs: c6230000a86000008a5900005c4c0000b2f5000088e30100961c030032b80000c079000094800000828000007c84000058e30300eea2000028690200b8bf00004cf80000f6c700005836000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -733,20 +733,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: fa570000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 608affff1ab9ffff4ac6ffff2aebffff66fbffffca330000d433000018340000
+      m_ExpandedIDs: cceeffff66fbffff383400006a3400008e340000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: GunPointer
-        m_OriginalName: GunPointer
+        m_Name: EnemiesParent
+        m_OriginalName: EnemiesParent
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -18252
+        m_UserData: -4404
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -795,9 +795,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -27.34425, y: 1.2597965, z: 0.2722882}
+    m_Target: {x: -30.26601, y: 0.5427893, z: 0.84037405}
     speed: 2
-    m_Value: {x: -27.34425, y: 1.2597965, z: 0.2722882}
+    m_Value: {x: -30.26601, y: 0.5427893, z: 0.84037405}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -843,13 +843,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_Size:
-    m_Target: 1.7343683
+    m_Target: 0.28431898
     speed: 2
-    m_Value: 1.7343683
+    m_Value: 0.28431898
   m_Ortho:
     m_Target: 0
     speed: 2
