@@ -4,8 +4,9 @@ public class Gun : MonoBehaviour
 {
     public float damage = 50f;
     public float range = 100f; //how far gun bullet can reach 
-    public float fireRate = 15f; //how fast can we shoot
     public float impactForce = 30f;
+    
+    public ParticleSystem particle;
 
     public Camera cam;
 
@@ -22,6 +23,8 @@ public class Gun : MonoBehaviour
 
     void Shot()
     {
+        particle.Play();
+        
         RaycastHit hitInfo; // collects informations about shoot
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hitInfo, range)) //returns true if we hit
         {

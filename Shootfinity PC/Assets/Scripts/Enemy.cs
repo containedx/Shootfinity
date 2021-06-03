@@ -5,9 +5,11 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float health = 100f;
-    
 
-    public void TakeDamage(float damageAmount)
+    public ParticleSystem particle;
+    public GameObject body;
+
+        public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
         if(health <= 0f)
@@ -18,7 +20,9 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject, 0.5f);
+        particle.Play();
+        Destroy(body);
+        Destroy(gameObject, 1.5f);
     }
 
 }
