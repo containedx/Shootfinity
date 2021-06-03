@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     public ScoreController scoreController;
     public GameObject player;
 
+    private bool dead = false;
+
     void Update()
     {
         MoveTowardsPlayer();
@@ -38,6 +40,9 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        if (dead) return;
+
+        dead = true;
         scoreController.UpdateScore();
         audio.Play();
         particle.Play();
